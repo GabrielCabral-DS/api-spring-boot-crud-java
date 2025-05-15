@@ -27,6 +27,10 @@ public class Users {
     private String city;
     private String state;
 
+    @ManyToMany
+    @JoinColumn(name = "product_id")
+    private Product product;
+
     @Type(ListArrayType.class)
     @Column(name = "roles", columnDefinition = "varchar[]")
     private List<String> roles;

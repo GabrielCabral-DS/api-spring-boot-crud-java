@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.Set;
+
 @Entity
 @Table(name = "product")
 @Getter
@@ -17,6 +19,9 @@ public class Product {
     private double price;
     private Integer quantity;
     private String category;
+
+    @OneToMany(mappedBy = "product")
+    private Set<Users> users;
 
 
     public Product(){
