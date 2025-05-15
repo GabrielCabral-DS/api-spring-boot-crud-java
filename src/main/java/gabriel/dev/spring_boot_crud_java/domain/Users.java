@@ -1,21 +1,22 @@
 package gabriel.dev.spring_boot_crud_java.domain;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+import org.hibernate.annotations.Type;
+import io.hypersistence.utils.hibernate.type.array.ListArrayType;
 
+import java.util.List;
 import java.util.UUID;
 
 @Entity
 @Table(name = "users")
 @Getter
 @Setter
-public class User {
+public class Users {
 
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
+    @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
     private String name;
@@ -26,11 +27,16 @@ public class User {
     private String city;
     private String state;
 
-    public User(){
+    @Type(ListArrayType.class)
+    @Column(name = "roles", columnDefinition = "varchar[]")
+    private List<String> roles;
+
+    public Users(){
 
     }
 
-    public User(String name,String email,String password, String phone, String address, String city, String state){
+    public Users(UUID id, String name, String email, String password, String phone, String address, String city, String state, List<String> roles) {
+        this.id = id;
         this.name = name;
         this.email = email;
         this.password = password;
@@ -38,5 +44,6 @@ public class User {
         this.address = address;
         this.city = city;
         this.state = state;
+        this.roles = roles;
     }
 }

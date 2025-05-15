@@ -1,5 +1,6 @@
-package gabriel.dev.spring_boot_crud_java.domain;
+package gabriel.dev.spring_boot_crud_java.domain.dto;
 
+import gabriel.dev.spring_boot_crud_java.domain.Product;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
