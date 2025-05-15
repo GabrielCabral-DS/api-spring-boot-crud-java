@@ -39,6 +39,6 @@ API REST em Java Spring para cadastro e gerenciamento de produtos. O sistema pos
 - Controle de Versão: Git + GitHub
 
 ### 🗃️ Arquitetura do Banco de Dados
-[<img alt="Warpnet" src=""/>](SpringBoot)
+[<img alt="Warpnet" src="https://sdmntpreastus.oaiusercontent.com/files/00000000-45e0-61f9-a8bf-8918e1e832f5/raw?se=2025-05-15T21%3A19%3A35Z&sp=r&sv=2024-08-04&sr=b&scid=00000000-0000-0000-0000-000000000000&skoid=864daabb-d06a-46b3-a747-d35075313a83&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-05-15T20%3A18%3A29Z&ske=2025-05-16T20%3A18%3A29Z&sks=b&skv=2024-08-04&sig=o3FAq8urL2CQOdEUoAldvhWPahTC6sxhSHeezm3R/6c%3D"/>](SpringBoot)
 
 ---
