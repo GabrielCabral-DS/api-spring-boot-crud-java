@@ -2,7 +2,7 @@
 
 API REST em Java Spring para cadastro e gerenciamento de produtos. O sistema possui dois perfis de usuários: ADMIN, com permissão total (CRUD), e FUNCIONÁRIO, com permissão apenas de leitura (listar e buscar).
 
-:large_blue_circle: [Linkedin Post](https://www.linkedin.com/feed/update/urn:li:activity:7150418480729600000/)
+:large_blue_circle: [Linkedin](https://www.linkedin.com/in/gabriel-cabral-878482262/)
 
 ### ⚙️ Funcionalidades
 
