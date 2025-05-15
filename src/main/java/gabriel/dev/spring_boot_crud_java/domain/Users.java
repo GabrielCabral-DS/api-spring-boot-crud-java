@@ -18,7 +18,6 @@ public class Users {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
-
     private String name;
     private String email;
     private String password;
@@ -27,7 +26,7 @@ public class Users {
     private String city;
     private String state;
 
-    @ManyToMany
+    @ManyToOne
     @JoinColumn(name = "product_id")
     private Product product;
 

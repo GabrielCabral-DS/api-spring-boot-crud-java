@@ -4,10 +4,12 @@ import gabriel.dev.spring_boot_crud_java.domain.Users;
 import gabriel.dev.spring_boot_crud_java.domain.dto.UserDTO;
 import gabriel.dev.spring_boot_crud_java.mapper.UserMapper;
 import gabriel.dev.spring_boot_crud_java.repository.UserRepository;
+import gabriel.dev.spring_boot_crud_java.validator.UserValidator;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 @Service
@@ -17,17 +19,21 @@ public class UserService {
     private final UserMapper userMapper;
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
+    private final UserValidator userValidator;
 
-    public UserService(UserMapper userMapper, UserRepository userRepository, PasswordEncoder passwordEncoder){
+    public UserService(UserMapper userMapper, UserRepository userRepository, PasswordEncoder passwordEncoder, UserValidator userValidator) {
         this.userMapper = userMapper;
         this.userRepository = userRepository;
         this.passwordEncoder = passwordEncoder;
+        this.userValidator = userValidator;
     }
 
 
+
     public UserDTO saveUsers(UserDTO userDTO){
-        userDTO.setPassword(passwordEncoder.encode(userDTO.getPassword()));
-        return userMapper.toDTO(userRepository.save(userMapper.toEntity(userDTO)));
+        Users user = userMapper.toEntity(userDTO);
+        userValidator.validate(user);
+        return userMapper.toDTO(userRepository.save(user));
     }
 
     public List<UserDTO> findAllUsers(){
@@ -36,8 +42,8 @@ public class UserService {
     }
 
     public UserDTO getByEmail(String email){
-        Users user = userRepository.findByEmail(email);
-        return userMapper.toDTO(user);
+        Optional<Users> user = userRepository.findByEmail(email);
+        return user.map(userMapper::toDTO).orElse(null);
     }
 
     public UserDTO findUsersById(UUID id){
@@ -54,6 +60,7 @@ public class UserService {
         user.setAddress(userDTO.getAddress());
         user.setCity(userDTO.getCity());
         user.setState(userDTO.getState());
+        userValidator.validate(user);
         return userMapper.toDTO(userRepository.save(user));
     }
 

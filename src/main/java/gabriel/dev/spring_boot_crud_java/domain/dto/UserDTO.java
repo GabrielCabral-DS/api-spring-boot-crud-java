@@ -1,6 +1,7 @@
 package gabriel.dev.spring_boot_crud_java.domain.dto;
 
 import gabriel.dev.spring_boot_crud_java.domain.Users;
+import jakarta.persistence.Column;
 import jakarta.validation.constraints.NotBlank;
 import lombok.Getter;
 import lombok.Setter;
