@@ -1,11 +1,6 @@
-# CartCheck
+###  📝 CartCheck
 
-<table align="right">
- <tr><td><a href="README.md"><img src="https://github.com/IagoAntunes/IagoAntunes/blob/master/images/us-flag.png" height="13"> English</a></td></tr>
- <tr><td><a href="README_pt.md"><img src="https://github.com/IagoAntunes/IagoAntunes/blob/master/images/br-flag.png" height="13"> Português</a></td></tr>
-</table>
-
-📝 API REST em Java Spring para cadastro e gerenciamento de produtos. O sistema possui dois perfis de usuários: ADMIN, com permissão total (CRUD), e FUNCIONÁRIO, com permissão apenas de leitura (listar e buscar).
+API REST em Java Spring para cadastro e gerenciamento de produtos. O sistema possui dois perfis de usuários: ADMIN, com permissão total (CRUD), e FUNCIONÁRIO, com permissão apenas de leitura (listar e buscar).
 
 :large_blue_circle: [Linkedin Post](https://www.linkedin.com/feed/update/urn:li:activity:7150418480729600000/)
 
