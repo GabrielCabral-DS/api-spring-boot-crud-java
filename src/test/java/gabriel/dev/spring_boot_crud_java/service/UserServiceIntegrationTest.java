@@ -47,7 +47,7 @@ class UserServiceIntegrationTest {
     @BeforeEach
     void setUp() {
         user = new Users();
-        user.setName("Gabriel");
+        user.setName("Gabriel Cabral");
         user.setEmail("gabriel@email.com");
         user.setPassword(passwordEncoder.encode("senha123"));
         userRepository.save(user);
@@ -91,7 +91,7 @@ class UserServiceIntegrationTest {
         UserDTO found = userService.getByEmail("gabriel@email.com");
 
         assertNotNull(found);
-        assertEquals("Gabriel", found.getName());
+        assertEquals("Gabriel Cabral", found.getName());
     }
 
     @Test
@@ -106,7 +106,7 @@ class UserServiceIntegrationTest {
         UserDTO found = userService.findUsersById(userId);
 
         assertNotNull(found);
-        assertEquals("Gabriel", found.getName());
+        assertEquals("Gabriel Cabral", found.getName());
     }
 
     @Test
