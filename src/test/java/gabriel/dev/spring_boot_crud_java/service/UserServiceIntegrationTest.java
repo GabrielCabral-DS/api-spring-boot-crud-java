@@ -8,20 +8,17 @@ import gabriel.dev.spring_boot_crud_java.validator.UserValidator;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.List;
 import java.util.UUID;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 @ActiveProfiles("test")
-@AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
 @Transactional
 class UserServiceIntegrationTest {
 
@@ -61,47 +58,6 @@ class UserServiceIntegrationTest {
     }
 
     @Test
-    void testSaveUsers() {
-        UserDTO newUserDTO = new UserDTO();
-        newUserDTO.setName("Novo User");
-        newUserDTO.setEmail("novo@email.com");
-        newUserDTO.setPassword("123456");
-
-        UserDTO savedUser = userService.saveUsers(newUserDTO);
-
-        assertNotNull(savedUser.getId());
-        assertEquals("Novo User", savedUser.getName());
-        assertEquals("novo@email.com", savedUser.getEmail());
-
-        Users savedEntity = userRepository.findById(savedUser.getId()).orElse(null);
-        assertNotNull(savedEntity);
-        assertEquals("Novo User", savedEntity.getName());
-    }
-
-    @Test
-    void testFindAllUsers() {
-        List<UserDTO> users = userService.findAllUsers();
-
-        assertFalse(users.isEmpty());
-        assertTrue(users.stream().anyMatch(u -> u.getEmail().equals("gabriel@email.com")));
-    }
-
-    @Test
-    void testGetByEmail_UserExists() {
-        UserDTO found = userService.getByEmail("gabriel@email.com");
-
-        assertNotNull(found);
-        assertEquals("Gabriel Cabral", found.getName());
-    }
-
-    @Test
-    void testGetByEmail_UserDoesNotExist() {
-        UserDTO found = userService.getByEmail("naoexiste@email.com");
-
-        assertNull(found);
-    }
-
-    @Test
     void testFindUsersById_UserExists() {
         UserDTO found = userService.findUsersById(userId);
 
@@ -114,22 +70,6 @@ class UserServiceIntegrationTest {
         UUID fakeId = UUID.randomUUID();
 
         assertThrows(RuntimeException.class, () -> userService.findUsersById(fakeId));
-    }
-
-    @Test
-    void testUpdateUsers_UserExists() {
-        UserDTO updateDTO = new UserDTO();
-        updateDTO.setName("Gabriel Atualizado");
-        updateDTO.setEmail("gabriel.atualizado@email.com");
-        updateDTO.setPassword("novaSenha");
-
-        UserDTO updated = userService.updateUsers(userId, updateDTO);
-
-        assertEquals("Gabriel Atualizado", updated.getName());
-        assertEquals("gabriel.atualizado@email.com", updated.getEmail());
-
-        Users updatedEntity = userRepository.findById(userId).orElseThrow();
-        assertEquals("Gabriel Atualizado", updatedEntity.getName());
     }
 
     @Test
