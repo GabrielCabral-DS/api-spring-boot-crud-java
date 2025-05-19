@@ -46,8 +46,8 @@ API REST em Java Spring para cadastro e gerenciamento de produtos. O sistema pos
 
 #### 📸 Resultado dos testes executados com sucesso:
 
-[<img alt="CI/CD" src="https://im.ge/i/Captura-de-Tela-2025-05-16-as-20-54-15.vZgt0X"/>](SpringBoot)
-[![vZgt0X.Captura-de-Tela-2025-05-16-as-20-54-15.png](https://i.im.ge/2025/05/19/vZgt0X.Captura-de-Tela-2025-05-16-as-20-54-15.png)](https://im.ge/i/Captura-de-Tela-2025-05-16-as-20-54-15.vZgt0X)
+[<img alt="CI/CD" src="https://lh3.googleusercontent.com/pw/AP1GczMORg7MKo7RpwcEbcB9r1RVHYAn8Vg53yFC63LSS9TWL1R86eMlUrem9S1CQgTPXWb-2nIBB2zKn-wtW_U52Zk5b6QHly2S_9-h4x8uN00Qb3bcobSwY1H4E0eGzrUY5ZQ2_wmPRu5cgh_Eiq4mMVRV=w1824-h945-s-no-gm?authuser=0"/>](SpringBoot)
+
 
 ---
-<a href="https://im.ge/i/Captura-de-Tela-2025-05-16-as-20-54-48.vZgw6F"><img src="https://i.im.ge/2025/05/19/vZgw6F.Captura-de-Tela-2025-05-16-as-20-54-48.png" alt="Captura de Tela 2025 05 16 as 20 54 48" border="0"></a>
+[<img alt="CI/CD" src="https://lh3.googleusercontent.com/pw/AP1GczPpKiI8ERd22Dbusaz0H0qtGmAmPbhJ4a6WI-0pvZg-JZrBUztDkngp2f1L8x7PFlV7bY1gu6TBE1FVsEfzg0Bl8xj17Ht7QhxM-efqiesWRPzZ436lLY8-uZBWn0Pj5sL0wZ7tKxYew2ARHWqC7hAj=w1821-h945-s-no-gm?authuser=0"/>](SpringBoot)
