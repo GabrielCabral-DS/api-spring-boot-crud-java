@@ -46,8 +46,7 @@ API REST em Java Spring para cadastro e gerenciamento de produtos. O sistema pos
 
 #### 📸 Resultado dos testes executados com sucesso:
 
-<img alt="Testes CI/CD 1" src="https://mail.google.com/mail/u/0/#drafts?projector=1"/>
+<a href="https://im.ge/i/Captura-de-Tela-2025-05-16-as-20-54-15.vZgm26"><img src="https://i.im.ge/2025/05/19/vZgm26.Captura-de-Tela-2025-05-16-as-20-54-15.png" alt="Captura de Tela 2025 05 16 as 20 54 15" border="0"></a>
 
 ---
-
-<img alt="Testes CI/CD 2" src="images/testes-github-actions-2.png"/>
+<a href="https://im.ge/i/Captura-de-Tela-2025-05-16-as-20-54-48.vZgw6F"><img src="https://i.im.ge/2025/05/19/vZgw6F.Captura-de-Tela-2025-05-16-as-20-54-48.png" alt="Captura de Tela 2025 05 16 as 20 54 48" border="0"></a>
