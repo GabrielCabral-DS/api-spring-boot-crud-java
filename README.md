@@ -39,6 +39,15 @@ API REST em Java Spring para cadastro e gerenciamento de produtos. O sistema pos
 - Controle de Versão: Git + GitHub
 
 ### 🗃️ Arquitetura do Banco de Dados
-[<img alt="Warpnet" src="https://sdmntpreastus.oaiusercontent.com/files/00000000-45e0-61f9-a8bf-8918e1e832f5/raw?se=2025-05-15T21%3A19%3A35Z&sp=r&sv=2024-08-04&sr=b&scid=00000000-0000-0000-0000-000000000000&skoid=864daabb-d06a-46b3-a747-d35075313a83&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-05-15T20%3A18%3A29Z&ske=2025-05-16T20%3A18%3A29Z&sks=b&skv=2024-08-04&sig=o3FAq8urL2CQOdEUoAldvhWPahTC6sxhSHeezm3R/6c%3D"/>](SpringBoot)
+[<img alt="Modelo-ER" src="https://lh3.googleusercontent.com/pw/AP1GczOJ0Yh48RvyFyPTkmmgRv3qPRlQAL6WNPotdmBe8lxCQTjVjFhXnQ2jthnu80_pycT1rPeYt4E3MHWMCXkn5wYLrU3pGGqLYJc9GEmgB2ca5M9sp-XNXPwpKQWinqCvOJADCGdVz6NFOlqW7xBPJUYf=w945-h945-s-no-gm?authuser=0"/>](SpringBoot)
 
 ---
+### ✅ Testes Automatizados CI/CD GitHub Actions!
+
+#### 📸 Resultado dos testes executados com sucesso:
+
+[<img alt="CI/CD" src="https://lh3.googleusercontent.com/pw/AP1GczMORg7MKo7RpwcEbcB9r1RVHYAn8Vg53yFC63LSS9TWL1R86eMlUrem9S1CQgTPXWb-2nIBB2zKn-wtW_U52Zk5b6QHly2S_9-h4x8uN00Qb3bcobSwY1H4E0eGzrUY5ZQ2_wmPRu5cgh_Eiq4mMVRV=w1824-h945-s-no-gm?authuser=0"/>](SpringBoot)
+
+
+---
+[<img alt="CI/CD" src="https://lh3.googleusercontent.com/pw/AP1GczPpKiI8ERd22Dbusaz0H0qtGmAmPbhJ4a6WI-0pvZg-JZrBUztDkngp2f1L8x7PFlV7bY1gu6TBE1FVsEfzg0Bl8xj17Ht7QhxM-efqiesWRPzZ436lLY8-uZBWn0Pj5sL0wZ7tKxYew2ARHWqC7hAj=w1821-h945-s-no-gm?authuser=0"/>](SpringBoot)
